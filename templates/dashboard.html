@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
 {% extends "base.html" %}
 
 {% block content %}
@@ -44,14 +52,14 @@
 
         <div class="card-footer bg-white">
 
-            <a href="{{ url_for('notes.edit_note', id=note.id) }}"
+            <a href="{{ url_for('notes.edit_note', note_id=note.id) }}"
                class="btn btn-warning btn-sm">
 
                 Edit
 
             </a>
 
-            <a href="{{ url_for('notes.delete_note', id=note.id) }}"
+            <a href="{{ url_for('notes.delete_note', note_id=note.id) }}"
                class="btn btn-danger btn-sm"
                onclick="return confirm('Delete this note?')">
 
@@ -82,3 +90,5 @@
 {% endif %}
 
 {% endblock %}
+</body>
+</html>
