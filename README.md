@@ -4,6 +4,14 @@ A secure and user-friendly Notes Management web application built with **Flask**
 
 ---
 
+## Live Demo
+
+🔗 **Application:**
+(https://notes-app-9g57.onrender.com/)
+> Hosted on Render.
+
+---
+
 ##  Features
 
 -  User Registration
